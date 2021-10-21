@@ -28,6 +28,7 @@
 #             Groups              #
 ##################################
  
+/** 
 module "group-organization-admins" {
   source = "terraform-google-modules/group/google"
  
@@ -97,10 +98,11 @@ module "group-developers" {
 ##################################
 #         Role Binding           #
 ##################################
- 
+
+
 module "organization-iam-bindings" {
   source        = "terraform-google-modules/iam/google//modules/organizations_iam"
-  organizations = ["latamdc.com"]
+  organizations = ["pymesenlinea.com.ar"]
   mode          = "authoritative"
  
   bindings = {
@@ -249,6 +251,8 @@ module "folder-iam-npd" {
   }
 }
  
+/*
+
 /**
 ### MULTI VPC ###
 */
