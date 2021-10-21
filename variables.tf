@@ -17,19 +17,19 @@
 variable "billing_account_id" {
     description = "The ID of the billing account"
     type        = string
-    default     = "01CFDC-F73410-F4B3CE" 
+    default     = "01588D-50B302-F74B9E" 
 }
  
 variable "project_id" {
   description = "The ID of the project in which to provision resources and used for billing"
   type        = string
-  default     = "pega-sandbox-327314"
+  default     = "useful-tempest-329712"
 }
  
 variable "domain" {
   description = "Domain of the organization to create the group in"
   type        = string
-  default     = "latamdc.com"
+  default     = "pymesenlinea.com.ar"
 }
  
 variable "suffix" {
